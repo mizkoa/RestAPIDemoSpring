@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  mysql-apps:
+    image: mysql
+    hostname: mysql-apps
+    container_name: mysql-apps
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=apps
+    ports:
+      - "3306:3306"
